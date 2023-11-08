@@ -14,14 +14,14 @@ public class Navigation_practice {
 		ChromeOptions co =new ChromeOptions();
 		//set testing chrome location 
 		co.setBinary("C:\\automation\\chrome-win64\\chrome-win64\\chrome.exe");//chrome added testing browser so we need to specify that 
-	    //create object for chromedriver and add that chrome in parameters
-		 WebDriver driver=new ChromeDriver(co);
-		 //launch the site
+		//create object for chromedriver and add that chrome in parameters
+		WebDriver driver=new ChromeDriver(co);
+		//launch the site
 		driver.navigate().to("https://letcode.in/buttons");
 		/*this is same as GET method ,actually if we look in to 
 		the code of navigation the get is called inside of to method*/
 		Thread.sleep(1000);
-		
+
 		//now click the home page tab
 		driver.findElement(By.id("home")).click();
 		//now check the current url and confirm its home page
@@ -39,11 +39,11 @@ public class Navigation_practice {
 
 		//refresh the current page
 		driver.navigate().refresh();
-		
+
 		/*we can store the navigation method in navigation variable 
 		 * and can be accessed easily by calling the variable 
 		 */
-        /* Navigation nav= driver.navigate();
+		/* Navigation nav= driver.navigate();
          nav.refresh();
          nav.back();
          nav.forward();*/

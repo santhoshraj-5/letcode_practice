@@ -14,14 +14,13 @@ public class Input_types {
 		ChromeOptions co =new ChromeOptions();
 		//set testing chrome location 
 		co.setBinary("C:\\automation\\chrome-win64\\chrome-win64\\chrome.exe");//chrome added testing browser so we need to specify that 
-	    //create object for chromedriver and add that chrome in parameters
-		 WebDriver driver=new ChromeDriver(co);
-		 //launch the site
+		//create object for chromedriver and add that chrome in parameters
+		WebDriver driver=new ChromeDriver(co);
+		//launch the site
 		driver.get("https://letcode.in/");
 		//click workspace header
 		driver.findElement(By.linkText("Work-Space")).click();
 		//maximize 
-		driver.manage().window().maximize();
 		//select input tab
 		driver.findElement(By.linkText("Edit")).click();
 		Thread.sleep(1000);
@@ -45,6 +44,6 @@ public class Input_types {
 		//check the tab is only readable
 		String is_readableonly = driver.findElement(By.id("dontwrite")).getAttribute("readonly");
 		System.out.println("this tab is only readable - "+is_readableonly);
-		}
+	}
 
 }
