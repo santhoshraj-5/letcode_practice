@@ -56,9 +56,9 @@ public class Alert_practice {
 		//prompt_alert_popup.dismiss();
 		Thread.sleep(2000);
 		//sweet alert
-		//					driver.findElement(By.id("modern")).click();
-		//					Alert sweet_alert_popuop=driver.switchTo().alert();
-		//					sweet_alert_popuop.accept();
+							driver.findElement(By.id("modern")).click();
+							Alert sweet_alert_popuop=driver.switchTo().alert();
+							sweet_alert_popuop.dismiss();
 
 
 

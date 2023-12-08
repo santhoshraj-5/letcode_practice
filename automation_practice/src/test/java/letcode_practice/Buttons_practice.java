@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
 
 public class Buttons_practice {
 
@@ -75,6 +76,13 @@ public class Buttons_practice {
 		//check button is editable
 		Boolean Disable_btn=  driver.findElement(By.id("isDisabled")).isEnabled();
 		System.out.println("is the button is intractable - "+Disable_btn);
+		
+		Actions builder=new Actions(driver);
+		WebElement hold_button=driver.findElement(By.xpath("//div[@class='card-content']//div[6]//div[1]//button[1]"));
+		builder.clickAndHold(hold_button).perform();
+		
+		String expected=driver.findElement(By.xpath("//div[@class='card-content']//div[6]//div[1]//button")).getText();
+		System.out.println(expected);
 
 	}
 
