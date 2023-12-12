@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG_practice.Priority_dependson_practice">
+      <class name="TestNG_practice.AttributesInTestNG">
         <methods>
-          <include name="add_to_cart"/>
+          <include name="method_2"/>
+          <include name="method_1"/>
         </methods>
-      </class> <!-- TestNG_practice.Priority_dependson_practice -->
+      </class> <!-- TestNG_practice.AttributesInTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
