@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-14T15:39:18 IST" name="Default suite" finished-at="2023-12-14T15:39:34 IST" duration-ms="16445">
+  <suite started-at="2023-12-15T18:28:58 IST" name="Default suite" finished-at="2023-12-15T18:29:13 IST" duration-ms="15644">
     <groups>
     </groups>
-    <test started-at="2023-12-14T15:39:18 IST" name="Default test" finished-at="2023-12-14T15:39:34 IST" duration-ms="16445">
-      <class name="TestNG_practice.Dataprovider_practice">
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_practice.Dataprovider_practice@689604d9]" started-at="2023-12-14T15:39:18 IST" name="login" data-provider="login" finished-at="2023-12-14T15:39:31 IST" duration-ms="12881" status="PASS">
+    <test started-at="2023-12-15T18:28:58 IST" name="Default test" finished-at="2023-12-15T18:29:13 IST" duration-ms="15644">
+      <class name="TestNG_practice.dataprovider_anotherclass_practice">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_practice.dataprovider_anotherclass_practice@747ddf94]" started-at="2023-12-15T18:28:58 IST" name="login" data-provider="login" finished-at="2023-12-15T18:29:06 IST" duration-ms="8397" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_practice.Dataprovider_practice@689604d9]" started-at="2023-12-14T15:39:31 IST" name="login" data-provider="login" finished-at="2023-12-14T15:39:34 IST" duration-ms="3520" status="PASS">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:TestNG_practice.dataprovider_anotherclass_practice@747ddf94]" started-at="2023-12-15T18:29:06 IST" name="login" data-provider="login" finished-at="2023-12-15T18:29:13 IST" duration-ms="7195" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-      </class> <!-- TestNG_practice.Dataprovider_practice -->
+      </class> <!-- TestNG_practice.dataprovider_anotherclass_practice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
