@@ -27,9 +27,10 @@ public class Parameter_annotation_practice {
 			System.err.println("un-defined driver");
 			break;
 		}
-		driver.get("https://letcode.in/signin");
-		driver.findElement(By.name("email")).sendKeys(email,Keys.TAB,pass);
-		driver.findElement(By.tagName("button")).click();
+		  driver.get("https://letcode.in/signin");
+		  driver.findElement(By.name("email")).sendKeys(email,Keys.TAB,pass);
+		  driver.findElement(By.tagName("button")).click();
+		 
 	}
 
 }
