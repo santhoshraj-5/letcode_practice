@@ -8,12 +8,13 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class xlfile_reading {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException //in this i have writen only the basic so with this we need to optimism
+	{
 		//storage location
 		String filelocation= "./Data/data_ for_testing.xlsx";
-		try (//goinig to the file
-		XSSFWorkbook wbook = new XSSFWorkbook(filelocation))
-		{
+		//goinig to the file
+		XSSFWorkbook wbook = new XSSFWorkbook(filelocation);
+		
 			//get the sheet
 			XSSFSheet sheet=wbook.getSheetAt(0);
 			//now go the row we want
@@ -23,9 +24,7 @@ public class xlfile_reading {
 			//get string from that cell
 			String value=cell.getStringCellValue();
 			System.out.println(value);
-		}
+			wbook.close();
 		
-
 	}
-
 }
