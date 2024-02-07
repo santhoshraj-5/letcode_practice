@@ -42,6 +42,7 @@ public class Radio_checkbox_practice {
 			}
 			else{System.out.println("both is selected");
 			}
+			//sidfjoewiofiwe
 
 		}
 	}
