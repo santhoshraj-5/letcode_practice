@@ -41,7 +41,9 @@ public class DragAndDropBy_practice {
 				System.out.println(x);
 				System.out.println(y);
 				Thread.sleep(2000);
-				builder.dragAndDropBy(source,x+1,y+1).perform();
+				//builder.moveToElement(source).perform();
+				builder.moveToElement(source).doubleClick(source).dragAndDropBy(source,50,50).build().perform();
+				//builder.release(source);.release(source)
 
 	}
 

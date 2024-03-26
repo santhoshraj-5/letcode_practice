@@ -26,7 +26,7 @@ public class Multiselect_practice {
 		//click workspace header
 		driver.findElement(By.linkText("Work-Space")).click();
 		Thread.sleep(1000);
-		//click drag button
+		//click multiselect 
 		driver.findElement(By.linkText("AUI - 4")).click();
 		
 		/*
@@ -41,13 +41,26 @@ public class Multiselect_practice {
 		 */
 		Actions builder=new Actions(driver);
 		 
+		//first go inside the outer box and then find the list of div presented
 		  WebElement total_out=driver.findElement(By.cssSelector("#container"));
 		 List<WebElement> select_list=total_out.findElements(By.tagName("div"));
+		 
+		 //now run the loop to reduce the list to single element 
 		 for(WebElement each_select : select_list) {
+			 //get text from single element because we can use that text in generating xpath
 			 String xpath=each_select.getText();
-			 WebElement button=driver.findElement(By.xpath("//h3[text()='"+xpath+"']/parent::div"));//
+			 //now pass that string in xpath 
+		 	 WebElement button=driver.findElement(By.xpath("//h3[text()='"+xpath+"']/parent::div"));//
+			 //keydown will click and hold the key action we give until we use keyup for release 
 			 builder.keyDown(Keys.LEFT_CONTROL).click(button).perform();
 		 }
+			
+		 for(WebElement each_select : select_list) { 
+			 String xpath=each_select.getText(); WebElement
+			 button=driver.findElement(By.xpath("//h3[text()='"+xpath+"']/parent::div"));
+			 builder.keyUp(Keys.LEFT_CONTROL).click(button).perform(); }
+
+		
 
 	}
 

@@ -17,7 +17,7 @@ public class checkbox_table_practice {
 		ChromeDriver driver= new ChromeDriver();
 		driver.get("https://letcode.in/table");
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
+
 		//track the table
 		WebElement table=driver.findElement(By.id("simpletable"));
 		//select the rows in the body of the table
@@ -26,7 +26,7 @@ public class checkbox_table_practice {
 		for (WebElement rows_s : table_allrows) {
 			System.out.println(rows_s.getText());
 		}
-		
+
 		//how many rows 
 		int size=table_allrows.size();
 		System.out.println(size);

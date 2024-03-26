@@ -5,7 +5,7 @@
     <classes>
       <class name="dataprovider_with_xlfile.Testclass">
         <methods>
-          <include name="login"/>
+          <include name="login" invocation-numbers="3"/>
         </methods>
       </class> <!-- dataprovider_with_xlfile.Testclass -->
     </classes>

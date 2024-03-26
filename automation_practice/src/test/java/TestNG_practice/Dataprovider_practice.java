@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class Dataprovider_practice {//this data are dummy it wont work
 	
-	@DataProvider(name="login",indices = {0})//this indices will pass only first row data
+	@DataProvider(name="login")//indices = {0} this indices will pass only first row data
 	public String[][] getdata() {
 		//this data provider will run only if we have 2d array data
 		String[][] data=new String[2][2];
