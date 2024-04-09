@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataprovider_with_xlfile.Testclass">
+      <class name="TestNG_practice.Assertion_practice">
         <methods>
-          <include name="login"/>
+          <include name="Hard_assertion"/>
         </methods>
-      </class> <!-- dataprovider_with_xlfile.Testclass -->
+      </class> <!-- TestNG_practice.Assertion_practice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
