@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 09 12:47:55 IST 2024</td>
+<td>Started on:</td><td>Mon May 06 19:40:12 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (57 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22042 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,10 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNG_practice.Assertion_practice.Hard_assertion()'><b>Hard_assertion</b><br>Test class: TestNG_practice.Assertion_practice</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at TestNG_practice.Assertion_practice.Hard_assertion(Assertion_practice.java:15)
+<td title='dataprovider_with_xlfile.Testclass.login()'><b>login</b><br>Test class: dataprovider_with_xlfile.Testclass<br>Parameters: null, null</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at dataprovider_with_xlfile.Testclass.login(Testclass.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -109,13 +106,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace464676531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace464676531'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at TestNG_practice.Assertion_practice.Hard_assertion(Assertion_practice.java:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1261321871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261321871'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at dataprovider_with_xlfile.Testclass.login(Testclass.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -143,8 +137,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>TestNG_practice.Assertion_practice@35e2d654</td></tr>
+<td>4</td>
+<td>dataprovider_with_xlfile.Testclass@747ddf94</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -155,10 +149,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNG_practice.Assertion_practice.soft_assertion()'><b>soft_assertion</b><br>Test class: TestNG_practice.Assertion_practice</td>
+<td title='dataprovider_with_xlfile.Testclass.login()'><b>login</b><br>Test class: dataprovider_with_xlfile.Testclass<br>Parameters: row4, 12324</td>
 <td></td>
-<td>0</td>
-<td>TestNG_practice.Assertion_practice@35e2d654</td></tr>
+<td>4</td>
+<td>dataprovider_with_xlfile.Testclass@747ddf94</td></tr>
+<tr>
+<td title='dataprovider_with_xlfile.Testclass.login()'><b>login</b><br>Test class: dataprovider_with_xlfile.Testclass<br>Parameters: santhoshraj532000@gmail.com, Santhoshraj@5</td>
+<td></td>
+<td>9</td>
+<td>dataprovider_with_xlfile.Testclass@747ddf94</td></tr>
+<tr>
+<td title='dataprovider_with_xlfile.Testclass.login()'><b>login</b><br>Test class: dataprovider_with_xlfile.Testclass<br>Parameters: santa@gmail.com, password</td>
+<td></td>
+<td>3</td>
+<td>dataprovider_with_xlfile.Testclass@747ddf94</td></tr>
 </table><p>
 </body>
 </html>

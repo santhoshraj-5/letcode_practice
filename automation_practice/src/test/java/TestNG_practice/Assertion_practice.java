@@ -24,7 +24,7 @@ public class Assertion_practice {
 			sf_assert.assertTrue(false);
 			sf_assert.assertEquals(true, false);
 			System.out.println("after soft asser true-fail");//if soft assert fail also it will run next line
-			
+			sf_assert.assertAll();//with out this the soft assert will not run
 		}
 		
 		

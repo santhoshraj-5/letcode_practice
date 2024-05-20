@@ -3,7 +3,8 @@ package dataprovider_with_xlfile;
 public class Pattern {
 
 	public static void main(String[] args) {
-		Square_Fill_Pattern(6);
+		Pattern pt=new Pattern();
+		pt.Square_Fill_Pattern(6);
 		Square_Hollow_Pattern(6);
 		Number_increasing_Pyramid_Pattern(6);
 		Number_increasing_reverse_Pyramid_Pattern(4);
@@ -12,7 +13,7 @@ public class Pattern {
 		Zero_One_Triangle_Pattern(4);
 		Rhombus_Pattern(4);
 	}
-	public static void Square_Fill_Pattern(int count) {
+	public  void Square_Fill_Pattern(int count) {
 		for(int i=1;i<=count;i++) {
 			for(int j=1;j<=count;j++) {
 				System.out.print("* ");

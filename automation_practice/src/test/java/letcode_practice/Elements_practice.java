@@ -31,7 +31,7 @@ public class Elements_practice {
 		 * xpath("//span[text()='Public Repos']/following-sibling::span")).getText();
 		 * System.out.println(public_repo+"-"+public_repo_count);
 		 */
-		 
+		 System.out.println(user_repo_details( driver.findElements(By.xpath(("//div[@class='field is-grouped is-grouped-multiline']//div[1]//div[1]")))));
 		user_repo_details( driver.findElements(By.xpath(("//div[@class='field is-grouped is-grouped-multiline']//div[1]//div[1]"))));
 		
 		user_repo_details(driver.findElements(By.xpath("//div[@class='field is-grouped is-grouped-multiline']")));
@@ -42,9 +42,11 @@ public class Elements_practice {
 		System.out.println(repo_url.size());
 
 	}
-public static void user_repo_details(List<WebElement> repo) {
+public static String user_repo_details(List<WebElement> repo) {
+	String last=null;
 	 for(WebElement l_repo:repo) {
-			System.out.println(l_repo.getText());
+			last=l_repo.getText();
 		 }
+	 return last;
 }
 }

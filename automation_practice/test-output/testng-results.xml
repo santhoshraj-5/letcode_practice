@@ -1,24 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-09T12:47:55 IST" name="Default suite" finished-at="2024-04-09T12:47:55 IST" duration-ms="57">
+  <suite started-at="2024-05-06T19:40:12 IST" name="Default suite" finished-at="2024-05-06T19:40:34 IST" duration-ms="22042">
     <groups>
     </groups>
-    <test started-at="2024-04-09T12:47:55 IST" name="Default test" finished-at="2024-04-09T12:47:55 IST" duration-ms="57">
-      <class name="TestNG_practice.Assertion_practice">
-        <test-method signature="Hard_assertion()[pri:1, instance:TestNG_practice.Assertion_practice@35e2d654]" started-at="2024-04-09T12:47:55 IST" name="Hard_assertion" finished-at="2024-04-09T12:47:55 IST" duration-ms="12" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2024-05-06T19:40:12 IST" name="Default test" finished-at="2024-05-06T19:40:34 IST" duration-ms="22042">
+      <class name="dataprovider_with_xlfile.Testclass">
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:dataprovider_with_xlfile.Testclass@747ddf94]" started-at="2024-05-06T19:40:13 IST" name="login" data-provider="login" finished-at="2024-05-06T19:40:22 IST" duration-ms="9488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[santhoshraj532000@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Santhoshraj@5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:dataprovider_with_xlfile.Testclass@747ddf94]" started-at="2024-05-06T19:40:22 IST" name="login" data-provider="login" finished-at="2024-05-06T19:40:26 IST" duration-ms="3521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[santa@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:dataprovider_with_xlfile.Testclass@747ddf94]" started-at="2024-05-06T19:40:26 IST" name="login" data-provider="login" finished-at="2024-05-06T19:40:30 IST" duration-ms="4140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[row4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12324]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:0, instance:dataprovider_with_xlfile.Testclass@747ddf94]" started-at="2024-05-06T19:40:30 IST" name="login" data-provider="login" finished-at="2024-05-06T19:40:34 IST" duration-ms="4330" status="FAIL">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at TestNG_practice.Assertion_practice.Hard_assertion(Assertion_practice.java:15)
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at dataprovider_with_xlfile.Testclass.login(Testclass.java:18)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -47,15 +100,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Hard_assertion -->
-        <test-method signature="soft_assertion()[pri:2, instance:TestNG_practice.Assertion_practice@35e2d654]" started-at="2024-04-09T12:47:55 IST" name="soft_assertion" finished-at="2024-04-09T12:47:55 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- soft_assertion -->
-      </class> <!-- TestNG_practice.Assertion_practice -->
+        </test-method> <!-- login -->
+      </class> <!-- dataprovider_with_xlfile.Testclass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

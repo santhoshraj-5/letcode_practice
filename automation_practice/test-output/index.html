@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--802927680\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1263171639\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestNG_practice.Assertion_practice" class="method navigator-link" hash-for-method="Hard_assertion">Hard_assertion</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="dataprovider_with_xlfile.Testclass" class="method navigator-link" hash-for-method="login(null, null)">login(null, null)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -117,7 +117,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestNG_practice.Assertion_practice" class="method navigator-link" hash-for-method="soft_assertion">soft_assertion</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="dataprovider_with_xlfile.Testclass" class="method navigator-link" hash-for-method="login(row4, 12324)">login(row4, 12324)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="dataprovider_with_xlfile.Testclass" class="method navigator-link" hash-for-method="login(santhoshraj532000@gmail.com, Santhoshraj@5)">login(santhoshraj532000@gmail.com, Santhoshraj@5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="dataprovider_with_xlfile.Testclass" class="method navigator-link" hash-for-method="login(santa@gmail.com, password)">login(santa@gmail.com, password)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -135,20 +145,18 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestNG_practice.Assertion_practice</span>
+              <span class="class-name">dataprovider_with_xlfile.Testclass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Hard_assertion">
-                  </a> <!-- Hard_assertion -->
-                  <span class="method-name">Hard_assertion</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at TestNG_practice.Assertion_practice.Hard_assertion(Assertion_practice.java:15)
+                  <a name="login(null, null)">
+                  </a> <!-- login(null, null) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(null,null)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at dataprovider_with_xlfile.Testclass.login(Testclass.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -184,14 +192,31 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestNG_practice.Assertion_practice</span>
+              <span class="class-name">dataprovider_with_xlfile.Testclass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="soft_assertion">
-                  </a> <!-- soft_assertion -->
-                  <span class="method-name">soft_assertion</span>
+                  <a name="login(row4, 12324)">
+                  </a> <!-- login(row4, 12324) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(row4,12324)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(santhoshraj532000@gmail.com, Santhoshraj@5)">
+                  </a> <!-- login(santhoshraj532000@gmail.com, Santhoshraj@5) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(santhoshraj532000@gmail.com,Santhoshraj@5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(santa@gmail.com, password)">
+                  </a> <!-- login(santa@gmail.com, password) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(santa@gmail.com,password)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,7 +224,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--802927680\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1263171639\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -208,7 +233,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestNG_practice.Assertion_practice&quot;/&gt;
+      &lt;class name=&quot;dataprovider_with_xlfile.Testclass&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -248,20 +273,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'soft_assertion')
-data.setCell(0, 2, 'TestNG_practice.Assertion_practice')
-data.setCell(0, 3, 13);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'dataprovider_with_xlfile.Testclass')
+data.setCell(0, 3, 9488);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Hard_assertion')
-data.setCell(1, 2, 'TestNG_practice.Assertion_practice')
-data.setCell(1, 3, 12);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'dataprovider_with_xlfile.Testclass')
+data.setCell(1, 3, 4330);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'dataprovider_with_xlfile.Testclass')
+data.setCell(2, 3, 4140);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'dataprovider_with_xlfile.Testclass')
+data.setCell(3, 3, 3521);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 ms</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -287,16 +320,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestNG_practice.Assertion_practice</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">dataprovider_with_xlfile.Testclass</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Hard_assertion</span>
+                <span class="method-name">login(santhoshraj532000@gmail.com, Santhoshraj@5)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">soft_assertion</span>
-                <span class="method-start">19 ms</span>
+                <span class="method-name">login(santa@gmail.com, password)</span>
+                <span class="method-start">9492 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(row4, 12324)</span>
+                <span class="method-start">13018 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login(null, null)</span>
+                <span class="method-start">17161 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

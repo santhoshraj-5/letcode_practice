@@ -9,16 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">57</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">22,042</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestNG_practice.Assertion_practice</td><td><a href="#m0">Hard_assertion</a></td><td rowspan="1">1712647075293</td><td rowspan="1">12</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNG_practice.Assertion_practice</td><td><a href="#m1">soft_assertion</a></td><td rowspan="1">1712647075312</td><td rowspan="1">13</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dataprovider_with_xlfile.Testclass</td><td><a href="#m0">login</a></td><td rowspan="1">1715004630279</td><td rowspan="1">4330</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">dataprovider_with_xlfile.Testclass</td><td><a href="#m1">login</a></td><td rowspan="3">1715004626136</td><td rowspan="3">4140</td></tr><tr class="passedeven"><td><a href="#m2">login</a></td></tr><tr class="passedeven"><td><a href="#m3">login</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">TestNG_practice.Assertion_practice#Hard_assertion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at TestNG_practice.Assertion_practice.Hard_assertion(Assertion_practice.java:15)
+<h2>Default test</h2><h3 id="m0">dataprovider_with_xlfile.Testclass#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at dataprovider_with_xlfile.Testclass.login(Testclass.java:18)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -46,6 +43,8 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestNG_practice.Assertion_practice#soft_assertion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">dataprovider_with_xlfile.Testclass#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>row4</td><td>12324</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">dataprovider_with_xlfile.Testclass#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>santhoshraj532000@gmail.com</td><td>Santhoshraj@5</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">dataprovider_with_xlfile.Testclass#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>santa@gmail.com</td><td>password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
